@@ -1,5 +1,7 @@
 using System;
 using Microsoft.Extensions.DependencyInjection;
+using TickerQ.DependencyInjection;
+using TickerQ.EntityFrameworkCore.DependencyInjection;
 using Volo.Abp.Uow;
 using Volo.Abp.AuditLogging.EntityFrameworkCore;
 using Volo.Abp.BackgroundJobs.EntityFrameworkCore;
@@ -51,6 +53,14 @@ public class BookStoreEntityFrameworkCoreModule : AbpModule
                 /* Remove "includeAllEntities: true" to create
                  * default repositories only for aggregate roots */
             options.AddDefaultRepositories(includeAllEntities: true);
+        });
+
+        context.Services.AddTickerQ(options =>
+        {
+            options.AddOperationalStore<BookStoreDbContext>(efOptions =>
+            {
+                efOptions.UseModelCustomizerForMigrations();
+            });
         });
 
         if (AbpStudioAnalyzeHelper.IsInAnalyzeMode)

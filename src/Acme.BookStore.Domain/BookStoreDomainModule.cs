@@ -14,6 +14,8 @@ using Volo.Abp.OpenIddict;
 using Volo.Abp.PermissionManagement.OpenIddict;
 using Volo.Abp.AuditLogging;
 using Volo.Abp.BackgroundJobs;
+using Volo.Abp.BackgroundJobs.TickerQ;
+using Volo.Abp.BackgroundWorkers.TickerQ;
 using Volo.Abp.Emailing;
 using Volo.Abp.FeatureManagement;
 using Volo.Abp.Identity;
@@ -29,6 +31,8 @@ namespace Acme.BookStore;
     typeof(AbpAuditLoggingDomainModule),
     typeof(AbpCachingModule),
     typeof(AbpBackgroundJobsDomainModule),
+    typeof(AbpBackgroundJobsTickerQModule),
+    typeof(AbpBackgroundWorkersTickerQModule),
     typeof(AbpFeatureManagementDomainModule),
     typeof(AbpPermissionManagementDomainIdentityModule),
     typeof(AbpPermissionManagementDomainOpenIddictModule),

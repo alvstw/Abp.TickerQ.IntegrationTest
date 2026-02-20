@@ -22,6 +22,8 @@ using Microsoft.IdentityModel.Logging;
 using Microsoft.OpenApi;
 using OpenIddict.Server.AspNetCore;
 using OpenIddict.Validation.AspNetCore;
+using TickerQ.DependencyInjection;
+using TickerQ.Dashboard.DependencyInjection;
 using Volo.Abp;
 using Volo.Abp.Account.Admin.Web;
 using Volo.Abp.Account.Public.Web;
@@ -126,6 +128,25 @@ public class BookStoreWebModule : AbpModule
     {
         var hostingEnvironment = context.Services.GetHostingEnvironment();
         var configuration = context.Services.GetConfiguration();
+
+        context.Services.AddTickerQ(options =>
+        {
+            options.AddDashboard(dashboardOptions =>
+            {
+                dashboardOptions.BasePath = "/tickerq/dashboard";
+
+                if (hostingEnvironment.IsDevelopment())
+                {
+                    dashboardOptions.UseHostAuthentication = false;
+                    dashboardOptions.EnableBuiltInAuth = false;
+                    dashboardOptions.EnableBasicAuth = false;
+                }
+                else
+                {
+                    dashboardOptions.UseHostAuthentication = true;
+                }
+            });
+        });
 
         if (!configuration.GetValue<bool>("App:DisablePII"))
         {
@@ -381,6 +402,7 @@ public class BookStoreWebModule : AbpModule
         app.UseAbpSwaggerUI(options => { options.SwaggerEndpoint("/swagger/v1/swagger.json", "BookStore API"); });
         app.UseAuditing();
         app.UseAbpSerilogEnrichers();
+        app.UseAbpTickerQ();
         app.UseConfiguredEndpoints();
     }
 }
