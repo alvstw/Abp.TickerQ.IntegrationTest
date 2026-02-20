@@ -19,7 +19,6 @@ using Volo.Abp.FeatureManagement;
 using Volo.Abp.Identity;
 using Volo.Abp.Commercial.SuiteTemplates;
 using Volo.Abp.LanguageManagement;
-using Volo.Abp.TextTemplateManagement;
 using Volo.Saas;
 using Volo.Abp.Gdpr;
 
@@ -38,7 +37,6 @@ namespace Acme.BookStore;
     typeof(AbpIdentityProDomainModule),
     typeof(AbpOpenIddictProDomainModule),
     typeof(SaasDomainModule),
-    typeof(TextTemplateManagementDomainModule),
     typeof(LanguageManagementDomainModule),
     typeof(VoloAbpCommercialSuiteTemplatesModule),
     typeof(AbpGdprDomainModule),

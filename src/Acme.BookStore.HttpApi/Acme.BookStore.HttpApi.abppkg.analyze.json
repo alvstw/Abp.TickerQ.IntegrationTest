@@ -31,11 +31,6 @@
           "name": "AbpAccountAdminHttpApiModule"
         },
         {
-          "declaringAssemblyName": "Volo.Abp.TextTemplateManagement.HttpApi",
-          "namespace": "Volo.Abp.TextTemplateManagement",
-          "name": "TextTemplateManagementHttpApiModule"
-        },
-        {
           "declaringAssemblyName": "Volo.Abp.AuditLogging.HttpApi",
           "namespace": "Volo.Abp.AuditLogging",
           "name": "AbpAuditLoggingHttpApiModule"

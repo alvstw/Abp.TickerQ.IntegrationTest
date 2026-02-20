@@ -56,11 +56,6 @@
           "name": "LanguageManagementEntityFrameworkCoreModule"
         },
         {
-          "declaringAssemblyName": "Volo.Abp.TextTemplateManagement.EntityFrameworkCore",
-          "namespace": "Volo.Abp.TextTemplateManagement.EntityFrameworkCore",
-          "name": "TextTemplateManagementEntityFrameworkCoreModule"
-        },
-        {
           "declaringAssemblyName": "Volo.Abp.Gdpr.EntityFrameworkCore",
           "namespace": "Volo.Abp.Gdpr",
           "name": "AbpGdprEntityFrameworkCoreModule"

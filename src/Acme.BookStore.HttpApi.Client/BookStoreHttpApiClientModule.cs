@@ -8,7 +8,6 @@ using Volo.Abp.FeatureManagement;
 using Volo.Abp.Identity;
 using Volo.Abp.AuditLogging;
 using Volo.Abp.LanguageManagement;
-using Volo.Abp.TextTemplateManagement;
 using Volo.Saas.Host;
 using Volo.Abp.Gdpr;
 using Volo.Abp.OpenIddict;
@@ -25,7 +24,6 @@ namespace Acme.BookStore;
     typeof(SaasHostHttpApiClientModule),
     typeof(AbpAuditLoggingHttpApiClientModule),
     typeof(AbpOpenIddictProHttpApiClientModule),
-    typeof(TextTemplateManagementHttpApiClientModule),
     typeof(LanguageManagementHttpApiClientModule),
     typeof(AbpGdprHttpApiClientModule),
     typeof(AbpSettingManagementHttpApiClientModule)

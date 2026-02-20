@@ -162,7 +162,7 @@
     "themeMenuPlacement": "",
     "mobileFramework": "none",
     "publicWebsite": "false",
-    "optionalModules": "GDPR TextTemplateManagement LanguageManagement AuditLogging OpenIddictAdmin",
+    "optionalModules": "GDPR LanguageManagement AuditLogging OpenIddictAdmin",
     "socialLogin": "true",
     "sampleCrudPage": "false",
     "selectedLanguages": ["English", "Arabic", "Chinese (Simplified)", "Chinese (Traditional)", "Czech", "English (United Kingdom)", "Finnish", "French", "German (Germany)", "Hindi ", "Hungarian", "Icelandic", "Italian", "Portuguese (Brazil)", "Romanian (Romania)", "Russian", "Slovak", "Spanish", "Swedish", "Turkish", ],

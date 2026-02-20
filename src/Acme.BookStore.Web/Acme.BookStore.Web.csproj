@@ -79,7 +79,6 @@
     <PackageReference Include="Volo.Abp.OpenIddict.Pro.Web" Version="10.0.2" />
     <PackageReference Include="Volo.Abp.LanguageManagement.Web" Version="10.0.2" />
     <PackageReference Include="Volo.Saas.Host.Web" Version="10.0.2" />
-    <PackageReference Include="Volo.Abp.TextTemplateManagement.Web" Version="10.0.2" />
     <PackageReference Include="Volo.Abp.Gdpr.Web" Version="10.0.2" />
   </ItemGroup>
 

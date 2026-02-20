@@ -46,11 +46,6 @@
           "name": "AbpOpenIddictProApplicationContractsModule"
         },
         {
-          "declaringAssemblyName": "Volo.Abp.TextTemplateManagement.Application.Contracts",
-          "namespace": "Volo.Abp.TextTemplateManagement",
-          "name": "TextTemplateManagementApplicationContractsModule"
-        },
-        {
           "declaringAssemblyName": "Volo.Abp.LanguageManagement.Application.Contracts",
           "namespace": "Volo.Abp.LanguageManagement",
           "name": "LanguageManagementApplicationContractsModule"

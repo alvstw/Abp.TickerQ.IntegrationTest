@@ -9,7 +9,6 @@ using Volo.Abp.EntityFrameworkCore.Sqlite;
 using Volo.Abp.FeatureManagement;
 using Volo.Abp.Modularity;
 using Volo.Abp.PermissionManagement;
-using Volo.Abp.TextTemplateManagement;
 using Volo.Abp.Uow;
 
 namespace Acme.BookStore.EntityFrameworkCore;
@@ -39,11 +38,6 @@ public class BookStoreEntityFrameworkCoreTestModule : AbpModule
         {
             options.SaveStaticPermissionsToDatabase = false;
             options.IsDynamicPermissionStoreEnabled = false;
-        });
-        Configure<TextTemplateManagementOptions>(options =>
-        {
-            options.SaveStaticTemplatesToDatabase = false;
-            options.IsDynamicTemplateStoreEnabled = false;
         });
         context.Services.AddAlwaysDisableUnitOfWorkTransaction();
 

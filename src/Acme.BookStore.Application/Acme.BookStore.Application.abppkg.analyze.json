@@ -46,11 +46,6 @@
           "name": "AbpAuditLoggingApplicationModule"
         },
         {
-          "declaringAssemblyName": "Volo.Abp.TextTemplateManagement.Application",
-          "namespace": "Volo.Abp.TextTemplateManagement",
-          "name": "TextTemplateManagementApplicationModule"
-        },
-        {
           "declaringAssemblyName": "Volo.Abp.OpenIddict.Pro.Application",
           "namespace": "Volo.Abp.OpenIddict",
           "name": "AbpOpenIddictProApplicationModule"

@@ -61,11 +61,6 @@
           "name": "AbpOpenIddictProDomainModule"
         },
         {
-          "declaringAssemblyName": "Volo.Abp.TextTemplateManagement.Domain",
-          "namespace": "Volo.Abp.TextTemplateManagement",
-          "name": "TextTemplateManagementDomainModule"
-        },
-        {
           "declaringAssemblyName": "Volo.Abp.LanguageManagement.Domain",
           "namespace": "Volo.Abp.LanguageManagement",
           "name": "LanguageManagementDomainModule"

@@ -46,11 +46,6 @@
           "name": "AbpOpenIddictProHttpApiClientModule"
         },
         {
-          "declaringAssemblyName": "Volo.Abp.TextTemplateManagement.HttpApi.Client",
-          "namespace": "Volo.Abp.TextTemplateManagement",
-          "name": "TextTemplateManagementHttpApiClientModule"
-        },
-        {
           "declaringAssemblyName": "Volo.Abp.LanguageManagement.HttpApi.Client",
           "namespace": "Volo.Abp.LanguageManagement",
           "name": "LanguageManagementHttpApiClientModule"

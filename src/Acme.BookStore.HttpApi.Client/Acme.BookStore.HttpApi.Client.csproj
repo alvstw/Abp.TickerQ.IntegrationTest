@@ -26,7 +26,6 @@
     <PackageReference Include="Volo.Abp.AuditLogging.HttpApi.Client" Version="10.0.2" />
     <PackageReference Include="Volo.Abp.OpenIddict.Pro.HttpApi.Client" Version="10.0.2" />
     <PackageReference Include="Volo.Abp.LanguageManagement.HttpApi.Client" Version="10.0.2" />
-    <PackageReference Include="Volo.Abp.TextTemplateManagement.HttpApi.Client" Version="10.0.2" />
     <PackageReference Include="Volo.Abp.Gdpr.HttpApi.Client" Version="10.0.2" />
   </ItemGroup>
 

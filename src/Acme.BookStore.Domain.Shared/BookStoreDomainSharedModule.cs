@@ -13,7 +13,6 @@ using Volo.Abp.VirtualFileSystem;
 using Volo.Abp.OpenIddict;
 using Volo.Abp.BlobStoring.Database;
 using Volo.Abp.LanguageManagement;
-using Volo.Abp.TextTemplateManagement;
 using Volo.Saas;
 using Volo.Abp.Gdpr;
 using Volo.Abp.GlobalFeatures;
@@ -30,7 +29,6 @@ namespace Acme.BookStore;
     typeof(AbpOpenIddictProDomainSharedModule),
     typeof(LanguageManagementDomainSharedModule),
     typeof(SaasDomainSharedModule),
-    typeof(TextTemplateManagementDomainSharedModule),
     typeof(AbpGdprDomainSharedModule),
     typeof(AbpGlobalFeaturesModule),
     typeof(BlobStoringDatabaseDomainSharedModule)

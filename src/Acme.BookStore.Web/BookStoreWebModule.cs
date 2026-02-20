@@ -42,7 +42,6 @@ using Volo.Abp.Account.Public.Web.ExternalProviders;
 using Volo.Abp.Account.Pro.Public.Web.Shared;
 using Volo.Abp.AuditLogging.Web;
 using Volo.Abp.LanguageManagement;
-using Volo.Abp.TextTemplateManagement.Web;
 using Volo.Saas.Host;
 using Volo.Abp.Gdpr.Web;
 using Volo.Abp.Gdpr.Web.Extensions;
@@ -81,7 +80,6 @@ namespace Acme.BookStore.Web;
     typeof(AbpAccountAdminWebModule),
     typeof(AbpOpenIddictProWebModule),
     typeof(LanguageManagementWebModule),
-    typeof(TextTemplateManagementWebModule),
     typeof(AbpGdprWebModule),
     typeof(AbpFeatureManagementWebModule),
     typeof(AbpSwashbuckleModule),

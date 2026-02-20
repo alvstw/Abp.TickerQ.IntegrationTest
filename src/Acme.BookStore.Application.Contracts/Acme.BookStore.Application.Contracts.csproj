@@ -23,7 +23,6 @@
     <PackageReference Include="Volo.Abp.AuditLogging.Application.Contracts" Version="10.0.2" />
     <PackageReference Include="Volo.Abp.OpenIddict.Pro.Application.Contracts" Version="10.0.2" />
     <PackageReference Include="Volo.Abp.LanguageManagement.Application.Contracts" Version="10.0.2" />
-    <PackageReference Include="Volo.Abp.TextTemplateManagement.Application.Contracts" Version="10.0.2" />
     <PackageReference Include="Volo.Abp.Gdpr.Application.Contracts" Version="10.0.2" />
   </ItemGroup>
 

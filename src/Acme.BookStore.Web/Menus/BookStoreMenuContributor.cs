@@ -8,7 +8,6 @@ using Volo.Abp.Identity.Web.Navigation;
 using Volo.Abp.UI.Navigation;
 using Volo.Abp.AuditLogging.Web.Navigation;
 using Volo.Abp.LanguageManagement.Navigation;
-using Volo.Abp.TextTemplateManagement.Web.Navigation;
 using Volo.Abp.OpenIddict.Pro.Web.Menus;
 using Volo.Saas.Host.Navigation;
 
@@ -78,9 +77,6 @@ public class BookStoreMenuContributor : IMenuContributor
 
         //Administration->Language Management
         administration.SetSubItemOrder(LanguageManagementMenuNames.GroupName, 4);
-
-        //Administration->Text Template Management
-        administration.SetSubItemOrder(TextTemplateManagementMainMenuNames.GroupName, 6);
 
         //Administration->Audit Logs
         administration.SetSubItemOrder(AbpAuditLoggingMainMenuNames.GroupName, 7);

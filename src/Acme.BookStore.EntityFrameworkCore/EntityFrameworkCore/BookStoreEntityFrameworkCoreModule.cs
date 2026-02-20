@@ -13,7 +13,6 @@ using Volo.Abp.PermissionManagement.EntityFrameworkCore;
 using Volo.Abp.SettingManagement.EntityFrameworkCore;
 using Volo.Abp.BlobStoring.Database.EntityFrameworkCore;
 using Volo.Abp.LanguageManagement.EntityFrameworkCore;
-using Volo.Abp.TextTemplateManagement.EntityFrameworkCore;
 using Volo.Saas.EntityFrameworkCore;
 using Volo.Abp.Gdpr;
 using Volo.Abp.Studio;
@@ -32,7 +31,6 @@ namespace Acme.BookStore.EntityFrameworkCore;
     typeof(AbpOpenIddictProEntityFrameworkCoreModule),
     typeof(LanguageManagementEntityFrameworkCoreModule),
     typeof(SaasEntityFrameworkCoreModule),
-    typeof(TextTemplateManagementEntityFrameworkCoreModule),
     typeof(AbpGdprEntityFrameworkCoreModule),
     typeof(BlobStoringDatabaseEntityFrameworkCoreModule)
     )]

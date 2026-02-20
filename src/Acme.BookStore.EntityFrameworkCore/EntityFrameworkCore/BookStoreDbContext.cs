@@ -13,7 +13,6 @@ using Volo.Abp.PermissionManagement.EntityFrameworkCore;
 using Volo.Abp.SettingManagement.EntityFrameworkCore;
 using Volo.Abp.OpenIddict.EntityFrameworkCore;
 using Volo.Abp.LanguageManagement.EntityFrameworkCore;
-using Volo.Abp.TextTemplateManagement.EntityFrameworkCore;
 using Volo.Saas.EntityFrameworkCore;
 using Volo.Saas.Editions;
 using Volo.Saas.Tenants;
@@ -83,7 +82,6 @@ public class BookStoreDbContext :
         builder.ConfigureOpenIddictPro();
         builder.ConfigureLanguageManagement();
         builder.ConfigureSaas();
-        builder.ConfigureTextTemplateManagement();
         builder.ConfigureGdpr();
         builder.ConfigureBlobStoring();
         
