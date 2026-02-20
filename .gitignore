@@ -275,3 +275,4 @@ tempkey.jwk
 
 # Sensitive local config
 NuGet.Config
+**/appsettings.secrets.json
