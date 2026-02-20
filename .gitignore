@@ -272,3 +272,6 @@ src/Acme.BookStore.Blazor.Server.Tiered/Logs/*
 # IdentityServer temp files
 tempkey.rsa
 tempkey.jwk
+
+# Sensitive local config
+NuGet.Config
