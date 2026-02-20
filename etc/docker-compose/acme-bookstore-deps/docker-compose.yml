@@ -1,0 +1,21 @@
+services:
+  postgres:
+    container_name: bookstore-postgres-deps
+    image: postgres:17
+    ports:
+      - "35432:5432"
+    environment:
+      POSTGRES_USER: "root"
+      POSTGRES_PASSWORD: "myPassword"
+      POSTGRES_DB: "BookStore"
+    volumes:
+      - postgres_dependencies_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U root -d BookStore"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  postgres_dependencies_data:
+    name: bookstore_postgres_dependencies_data
