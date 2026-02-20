@@ -23,6 +23,10 @@ using Volo.Abp.Commercial.SuiteTemplates;
 using Volo.Abp.LanguageManagement;
 using Volo.Saas;
 using Volo.Abp.Gdpr;
+using Acme.BookStore.BackgroundWorkers;
+using System.Threading.Tasks;
+using Volo.Abp.BackgroundWorkers;
+using Volo.Abp;
 
 namespace Acme.BookStore;
 
@@ -60,5 +64,10 @@ public class BookStoreDomainModule : AbpModule
 #if DEBUG
         context.Services.Replace(ServiceDescriptor.Singleton<IEmailSender, NullEmailSender>());
 #endif
+    }
+
+    public override async Task OnApplicationInitializationAsync(ApplicationInitializationContext context)
+    {
+        await context.AddBackgroundWorkerAsync<LongRunningBackgroundWorker>();
     }
 }
