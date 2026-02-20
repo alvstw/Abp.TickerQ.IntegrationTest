@@ -384,7 +384,7 @@ public class BookStoreWebModule : AbpModule
         app.UseAbpCookieConsent();
         app.UseCorrelationId();
         app.UseRouting();
-        // app.MapAbpStaticAssets();
+        app.MapAbpStaticAssets();
         app.UseAbpStudioLink();
         app.UseAbpSecurityHeaders();
         app.UseAuthentication();
